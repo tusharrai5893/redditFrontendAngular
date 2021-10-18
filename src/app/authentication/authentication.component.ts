@@ -1,15 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-authentication',
   templateUrl: './authentication.component.html',
-  styleUrls: ['./authentication.component.css']
+  styleUrls: ['./authentication.component.css'],
 })
 export class AuthenticationComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  
+  constructor() {
+    
   }
 
+  ngOnInit(): void {}
+
+  
+  onSignIn(event:Event): void {
+    event.preventDefault();
+    console.log(event);
+    
+  }
 }

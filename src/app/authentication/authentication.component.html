@@ -1,27 +1,31 @@
-<div class="reddit__form-signIn">
+<div class="reddit__form-signIn" #myForm>
   <div class="reddit__signIn-title">Reddit</div>
 
   <div class="reddit__signIn-username">
     <input
       type="text"
+      autofcus
       name="username"
       id="signIn-username"
       placeholder="Username"
-      autofcus
+      required
     />
   </div>
 
   <div class="reddit__signIn-password">
     <input
       type="text"
-      name="username"
+      autofcus
+      name="password"
       id="signIn-password"
       placeholder="Password"
-      autofcus
+      required
     />
   </div>
 
-  <button class="reddit__signIn-submit-btn">Sign In</button>
+  <button (click)="onSignIn($event)" class="reddit__signIn-submit-btn">
+    Sign In
+  </button>
 
   <hr />
 
