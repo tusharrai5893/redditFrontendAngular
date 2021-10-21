@@ -79,3 +79,7 @@ hr {
   z-index: 999;
   transition: 0.5s ease;
 }
+
+.form-hidden {
+  display: none;
+}

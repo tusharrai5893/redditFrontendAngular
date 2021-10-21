@@ -1,33 +1,94 @@
-<div class="reddit__form-signIn" #myForm>
-  <div class="reddit__signIn-title">Reddit</div>
+<div class="auth">
+  <div class="reddit__form-signIn" id="signIn">
+    <div class="reddit__signIn-title">Reddit</div>
 
-  <div class="reddit__signIn-username">
-    <input
-      type="text"
-      autofcus
-      name="username"
-      id="signIn-username"
-      placeholder="Username"
-      required
-    />
+    <div class="reddit__signIn-username">
+      <input
+        type="text"
+        autofcus
+        name="username"
+        id="signIn-username"
+        placeholder="Username"
+        required
+      />
+    </div>
+
+    <div class="reddit__signIn-password">
+      <input
+        type="text"
+        autofcus
+        name="password"
+        id="signIn-password"
+        placeholder="Password"
+        required
+      />
+    </div>
+
+    <button (click)="onSignIn($event)" class="reddit__signIn-submit-btn">
+      Sign In
+    </button>
+
+    <hr />
+
+    <button
+      class="reddit__createAccount-btn"
+      id="createAccount"
+      (click)="onCreateAccount()"
+    >
+      Create New Account
+    </button>
   </div>
 
-  <div class="reddit__signIn-password">
-    <input
-      type="text"
-      autofcus
-      name="password"
-      id="signIn-password"
-      placeholder="Password"
-      required
-    />
+  <!-- SignUp form html -->
+
+  <div class="reddit__form-signIn form-hidden" id="signUp">
+    <div class="reddit__signIn-title">Reddit</div>
+
+    <div class="reddit__signIn-username">
+      <input
+        type="text"
+        autofcus
+        name="username"
+        id="signIn-username"
+        placeholder="Username"
+        required
+      />
+    </div>
+
+    <div class="reddit__signIn-password">
+      <input
+        type="text"
+        autofcus
+        name="password"
+        id="signIn-password"
+        placeholder="Password"
+        required
+      />
+    </div>
+
+    <div class="reddit__signIn-password">
+      <input
+        type="email"
+        autofcus
+        name="email"
+        id="signIn-email"
+        placeholder="Email"
+        required
+      />
+    </div>
+
+    <button (click)="onSignIn($event)" class="reddit__signIn-submit-btn">
+      Sign Up
+    </button>
+
+    <hr />
+
+    <button
+      class="reddit__createAccount-btn"
+      id="signIn"
+      (click)="onCreateAccount()"
+    >
+      Sign In
+    </button>
   </div>
-
-  <button (click)="onSignIn($event)" class="reddit__signIn-submit-btn">
-    Sign In
-  </button>
-
-  <hr />
-
-  <button class="reddit__createAccount-btn">Create New Account</button>
 </div>
